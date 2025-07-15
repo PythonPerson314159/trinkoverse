@@ -1,14 +1,14 @@
 <html>
-  <h1>Fun Tools</h1>
+  <h1 id="BIG">Fun Trinks</h1>
   <div id="tools"></div>
   <br><hr>
-  <h1>Boring Tools</h1>
+  <h1>Boring Trinks</h1>
   <div id="boring"></div><hr>
   <h1>About the Website</h1>
   <center>
 
     <div id="lalala">
-This website is a collection of small tools I've made over the months/years. The top ones are the more amusing and fun ones, and probably why you came here, while the bottom ones only exist to make your life easier in the situations when you need them.
+This website is a collection of small trinkets I've made over the months/years. The top ones are the more amusing and fun ones, and probably why you came here, while the bottom ones only exist to make your life easier in the situations when you need them.
 <br><br>I pour a lot of time into making these, so if you'd like to, support me financially <a>here.</a> Thank you in advance!
 <br><br>If you have a great idea for a tiny tool like the ones on this site, pop it in the form <a>here,</a> and I might add it! If it gets accepted, you can also add a custom message on the page for the world to see!
 <br><br>This website is super fast, too. These were especially coded to perform amazingly on near any device, including Chromebooks, old PCs - you name it, these tools will run like a charm!
@@ -82,13 +82,13 @@ fetch("https://trinkoverse.netlify.app/games.xml")
     margin-right:3vh;
     word-wrap: normal;
     margin-top:2vh;
-    border-radius:3px;
+    border-radius:6px;
     color:#FFFFFF;
     display:inline-block;
     transition: 0.5s;
   }
   .thing:hover{
-    transform:rotate(6deg);
+    transform:rotate(5deg);
     
   }
   #tools{
@@ -96,6 +96,12 @@ fetch("https://trinkoverse.netlify.app/games.xml")
   }
   button{
     padding:0.5vh;
+    border-radius:4px;
+    border: none;
+    transition:0.2s;
+  }
+  button:hover{
+background-color:lightcyan
   }
   #boring{
     text-align:center;
@@ -117,5 +123,8 @@ color:#EEEEEE
   #lalala{
     width:60%;
     text-align:left;
+  }
+  #BIG{
+    font-size:400%;
   }
 </style>
