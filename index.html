@@ -3,7 +3,7 @@
   <div id="tools"></div>
   <br><hr>
   <h1>Boring Tools</h1>
-  <div id="boring"></div>
+  <div id="boring"></div><hr>
   <h1>About the Website</h1>
   <center>
 
@@ -27,9 +27,9 @@ This website is a collection of small tools I've made over the months/years. The
 </html>
 
 <script>
-  things=[]
-  things0=[]
-  links=[]
+  var things=[]
+  var things0=[]
+  var links=[]
 
 fetch("https://trinkoverse.netlify.app/games.xml")
     .then(response => response.text())
@@ -39,31 +39,37 @@ fetch("https://trinkoverse.netlify.app/games.xml")
         
 
         items.forEach(item => {
+          console.log(item.querySelector("title").textContent)
             things.push(item.querySelector("title").textContent)
             things0.push(item.querySelector("description").textContent)
             links.push(item.querySelector("link").textContent)
-        });})
-
-
-
-e=''
-for (m in things){
-  e+="<div class=thing><h2>"+things[m]+"</h2><p>"+things0[m]+"</p><button onclick=location.href='"+links[m]+"'>PLAY NOW!</button></div>"
-}
+          })
+        })
+          .then( () =>{
+        e=''
+        for (m in things){
+          e+="<div class=thing><h2>"+things[m]+"</h2><p>"+things0[m]+"</p><button onclick=location.href='"+links[m]+"'>PLAY NOW!</button></div>"
+        }
+          
+          document.getElementById("tools").innerHTML=e
+          
+      })
+.then( ()=>{
+  var things=['cabc123',"def456","blaurblaurblaur","wow thats so ool"]
+  var things0=['csuper cool thingamabob',"less cool  cccccccccccccccccccc ccccccccccccccccccccccc cccccccccccccccccccccccccccccc cccccccccccccccccccccccccccccccc ccccccccccccccccccccccccccccjig but still nice","0/10 would not recommend","epic insane 11/5 stars"]
+  var links=['cblah.html','aaa.html','ert.html','popoiori.html']
   
-  document.getElementById("tools").innerHTML=e
-
-
-  things=['cabc123',"def456","blaurblaurblaur","wow thats so ool"]
-things0=['csuper cool thingamabob',"less cool  cccccccccccccccccccc ccccccccccccccccccccccc cccccccccccccccccccccccccccccc cccccccccccccccccccccccccccccccc ccccccccccccccccccccccccccccjig but still nice","0/10 would not recommend","epic insane 11/5 stars"]
-links=['cblah.html','aaa.html','ert.html','popoiori.html']
-
-e=''
-for (m in things){
+  e=''
+  for (m in things){
   e+="<div class=thing><h2>"+things[m]+"</h2><p>"+things0[m]+"</p><button onclick=location.href='"+links[m]+"'>MAKE YOUR LIFE EASIER!</button></div>"
-}
+  }
   
   document.getElementById("boring").innerHTML=e
+
+})
+
+
+
 </script>
 
 <style>
@@ -79,6 +85,11 @@ for (m in things){
     border-radius:3px;
     color:#FFFFFF;
     display:inline-block;
+    transition: 0.5s;
+  }
+  .thing:hover{
+    transform:rotate(8deg);
+    
   }
   #tools{
     text-align:center;
@@ -101,6 +112,7 @@ color:#EEEEEE
     border:dotted 1px white;
   }
   div{
+    padding: 10px;
   }
   #lalala{
     width:60%;
