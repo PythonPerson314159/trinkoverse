@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Zonajustr</title>
+        <link>https://zonajustr.ca</link>
+        <description>Beat jet lag with this simple tool!</description>
+        <language>en-us</language>
+
+        <item>
+            <title>Silly Calorie Counter</title>
+            <link>0.html</link>
+            <description>Have you ever wondered how many eggs of calories you burnt on the jog? well now you do!</description>
+        </item>
+        
+
+<item><title>Ten Dummies</title><link>1.html</link><description>Like a magic 8 ball, but there are loads of them, all ten times dumber!</description></item>
+<item><title>Grass-Touching Counter</title><link>2.html</link><description>Track how long you touch grass, down to the millisecond!</description></item>
+<item><title>Awake Population</title><link>3.html</link><description>How many people are awake... right now?</description></item>
+<item><title>Country War Simulator</title><link>4.html</link><description>Watch every nation battle it out in this crazy simulator!</description></item>
+<item><title>Silly Comparisions</title><link>5.html</link><description>How far could you go if you only ran while blinking, or only cycled while sleeping? All of those crazy answers and more!</description></item>
+<item><title>Nameswap Calculator</title><link>6.html</link><description>What does a girl name for John sound like? Or a boy name for Alice? Find out here!</description></item>
+<item><title>Word Chain Game</title><link>7.html</link><description>Play with a friend - start with a word, and chain the last two letters with the next word. Super fun!</description></item>
+<item><title>School Year Bingo</title><link>8.html</link><description>Gather a group, make your very own bingo cards for the school year and see who wins!</description></item>
+<item><title>Weird Keyboard</title><link>9.html</link><description>I made a keyboard where you only use one hand - and it doesn't even have to move! (does not work on all devices)</description></item>
+<item><title>Unblocked Snake</title><link>10.html</link><description>The classic snake game, but unblocked! (It even has a FAKE TITLE!!!)</description></item>
+<item><title>DNA Optical Illusion</title><link>11.html</link><description>I wanted to make a spinning strand of DNA, but instead make a bamboozling illusion!</description></item>
+<item><title>ASCII Art Generator</title><link>12.html</link><description>(ASCII happy face)</description></item>
+<item><title>Dumb AI Poem Generator</title><link>13.html</link><description>I hired the dumbest AI in the world to make poetry...</description></item>
+<item><title>Goofy Calendar</title><link>14.html</link><description>I don't like our calendar, so I made my own!</description></item>
+<item><title>Rhythm Triangle</title><link>15.html</link><description>Test your rhythm with this highly addictive game!</description></item>
+
+    </channel>
+</rss>

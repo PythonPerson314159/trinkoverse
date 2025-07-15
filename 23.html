@@ -1,0 +1,109 @@
+<html>
+  <h1>Fun Tools</h1>
+  <div id="tools"></div>
+  <br><hr>
+  <h1>Boring Tools</h1>
+  <div id="boring"></div>
+  <h1>About the Website</h1>
+  <center>
+
+    <div id="lalala">
+This website is a collection of small tools I've made over the months/years. The top ones are the more amusing and fun ones, and probably why you came here, while the bottom ones only exist to make your life easier in the situations when you need them.
+<br><br>I pour a lot of time into making these, so if you'd like to, support me financially <a>here.</a> Thank you in advance!
+<br><br>If you have a great idea for a tiny tool like the ones on this site, pop it in the form <a>here,</a> and I might add it! If it gets accepted, you can also add a custom message on the page for the world to see!
+<br><br>This website is super fast, too. These were especially coded to perform amazingly on near any device, including Chromebooks, old PCs - you name it, these tools will run like a charm!
+<br><br>If you have any inquiries, feedback, or anything else (minus ideas, those go in the form), you can email me at i.am.a.very.cool.person.29@gmail.com (I'm not kidding) and I'll try to get back to you!
+<br><br>Make sure to share this website with your friends too, so everyone can join in on the fun (and occasional monotony, too)!
+
+</div>
+    <footer>
+      <hr>
+      <br>
+      Copyright 2025 - All Rights Reserved.
+    </footer>
+  </center>
+
+
+</html>
+
+<script>
+  things=[]
+  things0=[]
+  links=[]
+
+fetch("/games.xml")
+    .then(response => response.text())
+    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then(data => {
+        let items = data.querySelectorAll("item")
+        
+
+        items.forEach(item => {
+            things.push(item.querySelector("title").textContent)
+            things0.push(item.querySelector("description").textContent)
+            links.push(item.querySelector("link").textContent)
+        });})
+
+
+
+e=''
+for (m in things){
+  e+="<div class=thing><h2>"+things[m]+"</h2><p>"+things0[m]+"</p><button onclick=location.href='"+links[m]+"'>PLAY NOW!</button></div>"
+}
+  
+  document.getElementById("tools").innerHTML=e
+
+
+  things=['cabc123',"def456","blaurblaurblaur","wow thats so ool"]
+things0=['csuper cool thingamabob',"less cool  cccccccccccccccccccc ccccccccccccccccccccccc cccccccccccccccccccccccccccccc cccccccccccccccccccccccccccccccc ccccccccccccccccccccccccccccjig but still nice","0/10 would not recommend","epic insane 11/5 stars"]
+links=['cblah.html','aaa.html','ert.html','popoiori.html']
+
+e=''
+for (m in things){
+  e+="<div class=thing><h2>"+things[m]+"</h2><p>"+things0[m]+"</p><button onclick=location.href='"+links[m]+"'>MAKE YOUR LIFE EASIER!</button></div>"
+}
+  
+  document.getElementById("boring").innerHTML=e
+</script>
+
+<style>
+  .thing{
+    vertical-align:top;
+    width:30lvh;
+    min-height:30vh;
+    background-color:grey;
+    margin-left:3vh;
+    margin-right:3vh;
+    word-wrap: normal;
+    margin-top:2vh;
+    border-radius:3px;
+    color:#FFFFFF;
+    display:inline-block;
+  }
+  #tools{
+    text-align:center;
+  }
+  button{
+    padding:0.5vh;
+  }
+  #boring{
+    text-align:center;
+  }
+  h1{
+    text-align:center;
+  }
+html{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color:#111111;
+color:#EEEEEE
+  }
+  hr{
+    border:dotted 1px white;
+  }
+  div{
+  }
+  #lalala{
+    width:60%;
+    text-align:left;
+  }
+</style>
